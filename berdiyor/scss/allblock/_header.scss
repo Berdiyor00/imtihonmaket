@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Space Mono", monospace;
+}
+
+@font-face {
+    font-family: "Space Mono", monospace;
+    src: url(../../fonts/Space-Mono/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lexend Deca", sans-serif;
+    src: url(../../fonts/Lexend-Deca/static/LexendDeca-Regular.ttf);
+}
+
+.container {
+    max-width: 1166px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+header {
+    background-image: url(../../imgs/img/bacground_desctop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position-y: 98px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    header {
+        background-image: url(../../imgs/img/table_background.jpg);
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        background-image: url(../../imgs/img/bacground_tablet.jpg);
+    }
+}
+
+.hero__title {
+    max-width: 500px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    padding-top: 210px;
+}
+
+.hero__text {
+    max-width: 380px;
+    width: 100%;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+
+.hero__top {
+    padding-left: 80px;
+    padding-top: 40px;
+    padding-bottom: 152px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0 21px 0;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: row-reverse;
+        width: 70%;
+    }
+}
+
+.navbar__add__btn {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .navbar__add__btn {
+        display: flex;
+    }
+}
+
+.navbar__remove__btn {
+    display: none;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    width: 55%;
+}
+
+@media (max-width: 768px) {
+    .navbar__menu {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar__menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 77px;
+        left: -30px;
+        background-color: #333A44;
+        height: 85vh;
+        max-width: 300px;
+        width: 100%;
+        row-gap: 25px;
+        transform: translateX(-100px);
+        visibility: hidden;
+        transition: 0.5s ease-in;
+    }
+}
+
+.navbar__menu__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #939CAA;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    transition: 0.3s ease;
+}
+
+.navbar__menu__link:hover {
+    border-bottom: 2px solid #FCB72B;
+    cursor: pointer;
+}
+
+.navbar__menu__btn {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    padding: 14px 39px;
+    border: 1px solid transparent;
+    background-color: #FCB72B;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 576px) {
+    .navbar__menu__btn {
+        display: none;
+    }
+}
+
+.navbar__menu__btn:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #FCB72B;
+    color: #FCB72B;
+    cursor: pointer;
+}
+
+.show {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.hero__text {
+    position: relative;
+}
+
+.hero__text::before {
+    content: "";
+    width: 202.5px;
+    height: 15px;
+    background-color: #FCB72B;
+    display: block;
+    position: absolute;
+    left: -220px;
+    top: 43px;
+}
+
+.hero__text::after {
+    content: "";
+    width: 202.5px;
+    height: 15px;
+    background-color: #FCB72B;
+    display: block;
+    position: absolute;
+    right: -210px;
+    top: 43px;
+}
+
+.hero__text::before {
+    content: "";
+    width: 202.5px;
+    height: 15px;
+    background-color: #FCB72B;
+    display: block;
+    position: absolute;
+    right: -200px;
+    top: 43px;
+}
+
+.hero__text__line1 {
+    width: 22.5px;
+    height: 15px;
+    background-color: #f6d4d4;
+    display: inline-block;
+    position: absolute;
+    right: -220px;
+    top: 43px;
+}
+
+.service__wrapper {
+    display: grid;
+    gr
+}
