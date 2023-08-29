@@ -247,15 +247,10 @@ nav {
   top: 43px;
 }
 
-.hero__text::after {
-  content: "";
-  width: 202.5px;
-  height: 15px;
-  background-color: #FCB72B;
-  display: block;
+.bacground__strelka {
   position: absolute;
-  right: -210px;
-  top: 43px;
+  top: 405px;
+  left: 550px;
 }
 
 .hero__text::before {
@@ -374,6 +369,25 @@ nav {
     font-weight: 400;
     line-height: 25px;
   }
+  .hero__text::before {
+    display: none;
+  }
+  .bacground__strelka {
+    left: -190px;
+    top: 500px;
+  }
+  .hero__title {
+    text-align: center;
+    margin-left: 40px;
+  }
+  .hero__text {
+    text-align: center;
+    max-width: 93%;
+    margin-left: -42px;
+  }
+  .hero__btn {
+    margin-left: 140px;
+  }
 }
 @media (max-width: 576px) {
   .service__wrapper__item {
@@ -423,6 +437,14 @@ nav {
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
+}
+
+.buttons {
+  display: none;
+}
+
+.navbar__add__btn {
+  display: none;
 }
 
 .careers__text {
@@ -680,6 +702,7 @@ nav {
   display: flex;
   align-items: center;
   column-gap: 32px;
+  row-gap: 16px;
 }
 
 .footer__wrapper {
@@ -864,6 +887,9 @@ nav {
     height: 96px;
     padding-top: 20px;
   }
+  .navbar__add__btn {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .footerback {
@@ -918,4 +944,39 @@ nav {
   .footer__link {
     margin-top: 50px;
   }
+  .buttons {
+    display: block;
+    position: absolute;
+    top: 470px;
+    width: 192px;
+    height: 53px;
+    left: 94px;
+    background-color: #FCB72B;
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  .navbar__menu {
+    padding-bottom: 282px;
+    margin-left: -51px;
+    margin-top: 17px;
+  }
+  .navbar__add__btn {
+    display: block;
+  }
+  .bacground__strelka {
+    left: -300px;
+  }
+  .hero__text {
+    margin-left: 0;
+  }
+}
+.hero__btn:hover {
+  background-color: rgba(92, 100, 117, 0);
+  color: #FCB72B;
+  border: 3px solid #FCB72B;
 }/*# sourceMappingURL=main.css.map */
