@@ -439,7 +439,7 @@ nav {
   line-height: 48px;
 }
 
-.buttons {
+.bottoom__knopka {
   display: none;
 }
 
@@ -944,7 +944,7 @@ nav {
   .footer__link {
     margin-top: 50px;
   }
-  .buttons {
+  .bottoom__knopka {
     display: block;
     position: absolute;
     top: 470px;
