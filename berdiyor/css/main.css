@@ -93,6 +93,7 @@ header {
 @media (max-width: 576px) {
   header {
     background-image: url(../../imgs/img/bacground_tablet.jpg);
+    margin-top: -30px;
   }
 }
 .hero__title {
@@ -250,18 +251,18 @@ nav {
 .bacground__strelka {
   position: absolute;
   top: 405px;
-  left: 550px;
+  left: 690px;
 }
 
 .hero__text::before {
   content: "";
-  width: 202.5px;
+  width: 323.5px;
   height: 15px;
-  background-color: #FCB72B;
+  background-color: rgb(252, 183, 43);
   display: block;
   position: absolute;
-  right: -200px;
-  top: 43px;
+  left: -100%;
+  top: 46px;
 }
 
 .hero__text__line1 {
@@ -316,6 +317,65 @@ nav {
   font-weight: 400;
   line-height: 25px;
   margin-top: 27px;
+}
+
+.bitmap1 {
+  position: relative;
+}
+
+.girl__strelka {
+  width: 900px;
+  position: absolute;
+  top: 300px;
+  right: -10px;
+}
+
+.bitmap2 {
+  position: relative;
+}
+
+.citystrett {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bitmap {
+  position: relative;
+}
+
+.bitmapo__strelka {
+  position: absolute;
+  right: 130px;
+  width: 500px;
+  right: -20px;
+  top: 30px;
+}
+
+@media (max-width: 768px) {
+  .girl__strelka {
+    left: 0;
+  }
+  .bitmapo__strelka {
+    left: 390px;
+  }
+  .citystrett {
+    left: -20px;
+  }
+}
+@media (max-width: 576px) {
+  .girl__strelka {
+    display: none;
+  }
+  .bitmapo__strelka {
+    display: none;
+  }
+  .citystrett {
+    display: none;
+  }
+}
+.bottoom__knop {
+  display: none;
 }
 
 .service__imgs {
@@ -417,6 +477,24 @@ nav {
     width: 75.5px;
     height: 20px;
     margin-left: -45%;
+  }
+  .bottoom__knop {
+    display: block;
+    display: block;
+    position: absolute;
+    top: 470px;
+    width: 192px;
+    height: 53px;
+    left: 70px;
+    background-color: #FCB72B;
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 150px;
   }
 }
 .careers__wrapp {
@@ -619,7 +697,7 @@ nav {
     font-family: "Lexend Deca", sans-serif;
     color: #939CAA;
     text-align: center;
-    font-family: Lexend Deca;
+    font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -950,20 +1028,21 @@ nav {
     top: 470px;
     width: 192px;
     height: 53px;
-    left: 94px;
+    left: 70px;
     background-color: #FCB72B;
     color: #FFF;
     text-align: center;
     font-family: "Space Mono", monospace;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 25px;
+    margin-top: 150px;
   }
   .navbar__menu {
     padding-bottom: 282px;
-    margin-left: -51px;
-    margin-top: 17px;
+    margin-left: -20px;
+    margin-top: -24px;
   }
   .navbar__add__btn {
     display: block;
